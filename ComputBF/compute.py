@@ -2,6 +2,7 @@ import pandas as pd
 from collections import defaultdict
 from itertools import product
 
+
 class Compute(object):
 
     def __init__(self, content):
