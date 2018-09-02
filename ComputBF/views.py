@@ -13,15 +13,16 @@ def compute_freq(request):
     input = request.POST
     print('#######', input)
     if request.POST:
-        input = request.POST['input']
+        raw_input = '\t'.join(['Rsid', 'GT', 'freq', 'beta']) + '\r\n'
+        raw_input += request.POST['input']
         try:
-            tt = Compute(input).main()
+            tt = Compute(raw_input).cartesian_product()
             ctx['rlt'] = tt
-            ctx['raw'] = input
+            ctx['raw'] = raw_input
         except Exception:
             if input:
                 ctx['rlt'] = '格式有误'
-                ctx['raw'] = input
+                ctx['raw'] = raw_input
             else:
                 ctx['rlt'] = '亲，你什么都没有输入！'
     return render(request, "compute.html", ctx)
