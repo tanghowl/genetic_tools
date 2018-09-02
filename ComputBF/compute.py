@@ -12,15 +12,22 @@ class Compute(object):
 
         data = {'Rsid': [], 'gt': [], 'freq': [], 'beta': []}
 
-        for line in self.input.strip().split('\n')[1:]:
+        for line in self.input.strip().split('\r\n')[1:]:
             each = line.strip().split()
-            data['Rsid'].append(each[0])
-            data['gt'].append(each[1])
-            data['freq'].append(each[2])
-            data['beta'].append(each[3])
-
+            if len(each) == 4:
+                data['Rsid'].append(each[0])
+                data['gt'].append(each[1])
+                data['freq'].append(each[2])
+                data['beta'].append(each[3])
+            elif len(each) == 0:
+                continue
+            else:
+                raise Exception('type is error')
         df = pd.DataFrame(data, dtype=float)
         df.index = df[['Rsid', 'gt']]
+        del df['Rsid']
+        del df['gt']
+        df.sort_index(inplace=True)
 
         return df
 
@@ -33,14 +40,15 @@ class Compute(object):
         all_gt = tuple(risd_dict.values())
         combinations = product(*all_gt)
         
-        results = ''
+        results = []
         for comb in combinations:
             result = [i[1] for i in comb]
             result.append(round(self.df.loc[comb, 'freq'].prod(), 2))
             result.append(round(self.df.loc[comb, 'beta'].sum(), 2))
-            results += '\t'.join(map(str, result)) + '\r\n'
-
+            results.append('\t'.join(map(str, result)))
+        results.sort(key=lambda x: float(x.split()[-1]), reverse=True)
+        all_data = '\n'.join(results)
         head = '\t'.join([i[0] for i in comb] + ['merge_freq', 'merge_beta']) + '\r\n'
-        results = head + results
+        results = head + all_data
         
-        return results
+        return self.df, results

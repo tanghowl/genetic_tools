@@ -17,12 +17,12 @@ def compute_freq(request):
         raw_input += request.POST['input']
         try:
             tt = Compute(raw_input).cartesian_product()
-            ctx['rlt'] = tt
-            ctx['raw'] = raw_input
-        except Exception:
+            ctx['raw'], ctx['rlt'] = tt
+        except Exception as e:
             if input:
                 ctx['rlt'] = '格式有误'
                 ctx['raw'] = raw_input
             else:
                 ctx['rlt'] = '亲，你什么都没有输入！'
+            print(e)
     return render(request, "compute.html", ctx)
