@@ -8,6 +8,10 @@ from django.views.decorators import csrf
 from .compute import Compute
 
 
+def get_home(request):
+    return render(request, "home.html")
+
+
 def compute_freq(request):
     ctx = {}
     raw_post = request.POST
@@ -16,8 +20,8 @@ def compute_freq(request):
         raw_input = '\t'.join(['Rsid', 'GT', 'freq', 'beta']) + '\r\n'
         raw_input += raw_post['input']
         try:
-            tt = Compute(raw_input).cartesian_product()
-            ctx['raw'], ctx['rlt'] = tt
+            result = Compute(raw_input).cartesian_product()
+            ctx['raw'], ctx['rlt'] = result
         except Exception as e:
             if raw_post['input'].strip():
                 ctx['rlt'] = '亲，你输入的格式有错误...'

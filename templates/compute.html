@@ -2,16 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>晓隽^_^</title>
+    <title>频率计算</title>
 
 </head>
 <body>
-<form action="/genetic/" method="post">
+<form action="" method="post">
     {% csrf_token %}
     在这里输入内容...<br>
-    <textarea cols="50" rows="13" id="many"  style="resize:none;" name="input"></textarea><br>
+    <textarea cols="50" rows="13" id="many"  style="resize:none;" name="input" ></textarea><br>
     <input type="submit" value="确定"  name="submit" />
-    <input type="reset" value="重置"  name="reset" />
 </form>
 输入数据:
 <pre>{{ raw }}</pre>
