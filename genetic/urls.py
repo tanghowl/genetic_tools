@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('genetic/', views.compute_freq),
     path('genetic/', views.get_home),
-    path('genetic/compute_freq/', views.compute_freq)
+    path('genetic/compute-freq/', views.compute_freq),
+    path('genetic/query-gt/', views.qurey_exist),
     # path('text', views.test),
 ]

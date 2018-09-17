@@ -6,6 +6,7 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.views.decorators import csrf
 from .compute import Compute
+from .querysite import QureyExist
 
 
 def get_home(request):
@@ -30,3 +31,15 @@ def compute_freq(request):
                 ctx['rlt'] = '亲，你什么都没有输入！'
             print(e)
     return render(request, "compute.html", ctx)
+
+
+def qurey_exist(request):
+    ctx = {}
+    raw_post = request.POST
+    print('#### query_exist:', raw_post)
+    if raw_post:
+        chrom = raw_post['chr']
+        pos = raw_post['pos']
+        ctx['rlt'] = QureyExist(chrom, pos).merge()
+
+    return render(request, 'query_gt.html', ctx)
