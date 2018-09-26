@@ -13,7 +13,7 @@ class QureyExist(object):
         self.v2_1_path = os.path.join(wd, 'configfile/v2.1_comparison_table')
         self.chrom = chrom.upper()
         self.pos = pos
-        self.site = chrom + '_' + pos
+        self.site = chrom.upper() + '_' + pos
 
     def qurey(self, path, version):
         df = pd.read_table(path, header=None, names=['chr', 'pos', 'ID', 'ref', 'alt'])
