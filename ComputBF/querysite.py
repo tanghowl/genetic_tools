@@ -11,7 +11,7 @@ class QureyExist(object):
         self.v1_path = os.path.join(wd, 'configfile/v1_comparison_table')
         self.v2_path = os.path.join(wd, 'configfile/v2_comparison_table')
         self.v2_1_path = os.path.join(wd, 'configfile/v2.1_comparison_table')
-        self.chrom = chrom
+        self.chrom = chrom.upper()
         self.pos = pos
         self.site = chrom + '_' + pos
 
