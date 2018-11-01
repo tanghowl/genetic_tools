@@ -18,7 +18,8 @@ def compute_freq(request):
     raw_post = request.POST
     print('#######', raw_post)
     if request.POST:
-        raw_input = '\t'.join(['Rsid', 'GT', 'freq', 'beta']) + '\r\n'
+        # raw_input = '\t'.join(['Rsid', 'GT', 'freq', 'beta']) + '\r\n'
+        raw_input = '\t'.join(['Rsid', 'GT', 'freq', 'OR']) + '\r\n'
         raw_input += raw_post['input']
         try:
             result = Compute(raw_input).cartesian_product()
