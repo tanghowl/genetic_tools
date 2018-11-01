@@ -46,9 +46,9 @@ class Compute(object):
         results = []
         for comb in combinations:
             result = [i[1] for i in comb]
-            result.append(round(self.df.loc[comb, 'freq'].prod(), 2))
+            result.append(round(self.df.loc[comb, 'freq'].prod(), 10))
             # result.append(round(self.df.loc[comb, 'beta'].sum(), 2))
-            result.append(round(self.df.loc[comb, 'OR'].prod(), 4))
+            result.append(round(self.df.loc[comb, 'OR'].prod(), 5))
             results.append('\t'.join(map(str, result)))
         results.sort(key=lambda x: float(x.split()[-1]), reverse=True)
         all_data = '\n'.join(results)
