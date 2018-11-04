@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>频率计算</title>
+
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    在这里输入内容...(格式:rs编号 基因型 基因型频率 OR值,以空格或制表符为分割符)<br>
+    <textarea cols="50" rows="13" id="many"  style="resize:none;" name="input" ></textarea><br>
+    <input type="submit" value="确定"  name="submit" />
+</form>
+输入数据:
+<pre>{{ raw }}</pre>
+结果:
+<pre>{{ rlt }}</pre>
+
+</body>
+</html>

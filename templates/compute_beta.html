@@ -8,7 +8,7 @@
 <body>
 <form action="" method="post">
     {% csrf_token %}
-    在这里输入内容...<br>
+    在这里输入内容...(格式:rs编号 基因型 基因型频率 Beta值,以空格或制表符为分割符)<br>
     <textarea cols="50" rows="13" id="many"  style="resize:none;" name="input" ></textarea><br>
     <input type="submit" value="确定"  name="submit" />
 </form>

@@ -30,7 +30,7 @@ def compute_beta(request):
             else:
                 ctx['rlt'] = '亲，你什么都没有输入！'
             print(e)
-    return render(request, "compute.html", ctx)
+    return render(request, "compute_beta.html", ctx)
 
 def compute_or(request):
     ctx = {}
@@ -49,7 +49,7 @@ def compute_or(request):
             else:
                 ctx['rlt'] = '亲，你什么都没有输入！'
             print(e)
-    return render(request, "compute.html", ctx)
+    return render(request, "compute_or.html", ctx)
 
 
 def qurey_exist(request):
