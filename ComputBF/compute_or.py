@@ -3,7 +3,7 @@ from collections import defaultdict
 from itertools import product
 
 
-class Compute(object):
+class ComputeOR(object):
 
     def __init__(self, content):
         self.input = content
@@ -42,13 +42,13 @@ class Compute(object):
             risd_dict[rs].append(each)
         all_gt = tuple(risd_dict.values())
         combinations = product(*all_gt)
-        
+
         results = []
         for comb in combinations:
             result = [i[1] for i in comb]
             result.append(round(self.df.loc[comb, 'freq'].prod(), 10))
             # result.append(round(self.df.loc[comb, 'beta'].sum(), 2))
-            result.append(round(self.df.loc[comb, 'OR'].prod(), 5))
+            result.append(round(self.df.loc[comb, 'OR'].prod(), 10))
             results.append('\t'.join(map(str, result)))
         results.sort(key=lambda x: float(x.split()[-1]), reverse=True)
         all_data = '\n'.join(results)
