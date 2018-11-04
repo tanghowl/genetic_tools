@@ -11,7 +11,6 @@ class ComputeOR(object):
 
     def read_data(self):
 
-        # data = {'Rsid': [], 'gt': [], 'freq': [], 'beta': []}
         data = {'Rsid': [], 'gt': [], 'freq': [], 'OR': []}
 
         for line in self.input.strip().split('\r\n')[1:]:
@@ -20,7 +19,6 @@ class ComputeOR(object):
                 data['Rsid'].append(each[0])
                 data['gt'].append(each[1])
                 data['freq'].append(each[2])
-                # data['beta'].append(each[3])
                 data['OR'].append(each[3])
             elif len(each) == 0:
                 continue
@@ -47,12 +45,10 @@ class ComputeOR(object):
         for comb in combinations:
             result = [i[1] for i in comb]
             result.append(round(self.df.loc[comb, 'freq'].prod(), 10))
-            # result.append(round(self.df.loc[comb, 'beta'].sum(), 2))
             result.append(round(self.df.loc[comb, 'OR'].prod(), 10))
             results.append('\t'.join(map(str, result)))
         results.sort(key=lambda x: float(x.split()[-1]), reverse=True)
         all_data = '\n'.join(results)
-        # head = '\t'.join([i[0] for i in comb] + ['merge_freq', 'merge_beta']) + '\r\n'
         head = '\t'.join([i[0] for i in comb] + ['merge_freq', 'merge_OR']) + '\r\n'
         results = head + all_data
         

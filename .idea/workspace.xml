@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b0d4052-8110-413c-be6c-4c5455ca735c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/compute_beta.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ComputBF/compute_or.py" afterPath="$PROJECT_DIR$/ComputBF/compute_or.py" />
       <change beforePath="$PROJECT_DIR$/ComputBF/views.py" afterPath="$PROJECT_DIR$/ComputBF/views.py" />
-      <change beforePath="$PROJECT_DIR$/templates/compute.html" afterPath="$PROJECT_DIR$/templates/compute_or.html" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="compute_or.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="compute_or.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ComputBF/compute_or.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ComputBF/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+            <state relative-caret-position="230">
+              <caret line="22" column="61" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="61" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -92,8 +90,8 @@
       <file leaf-file-name="compute_beta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ComputBF/compute_beta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+            <state relative-caret-position="543">
+              <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -137,7 +135,6 @@
         <option value="$PROJECT_DIR$/templates/query_gt.html" />
         <option value="$PROJECT_DIR$/ComputBF/querysite.py" />
         <option value="$PROJECT_DIR$/ComputBF/compute.py" />
-        <option value="$PROJECT_DIR$/ComputBF/compute_or.py" />
         <option value="$PROJECT_DIR$/ComputBF/compute_beta.py" />
         <option value="$PROJECT_DIR$/genetic/urls.py" />
         <option value="$PROJECT_DIR$/templates/compute.html" />
@@ -145,12 +142,14 @@
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/compute_beta.html" />
         <option value="$PROJECT_DIR$/ComputBF/views.py" />
+        <option value="$PROJECT_DIR$/ComputBF/compute_or.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="809" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -337,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541335722354</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add or">
+      <created>1541336153218</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1541336153218</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -697,24 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ComputBF/compute_or.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ComputBF/compute_beta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/compute.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -757,11 +745,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ComputBF/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        <state relative-caret-position="230">
+          <caret line="22" column="61" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="61" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ComputBF/compute_beta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ComputBF/compute_or.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

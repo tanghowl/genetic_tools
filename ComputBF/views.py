@@ -3,7 +3,6 @@ from django.shortcuts import render
 # Create your views here.
 # -*- coding: utf-8 -*-
 
-from django.shortcuts import render
 from django.views.decorators import csrf
 from .compute_or import ComputeOR
 from .querysite import QureyExist
