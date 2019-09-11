@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NGS QC</title>
+    <style>
+    table {
+        border: 0px;
+        cellspacing: 1px;
+        cellpadding: 0px;
+        background: #888;
+    }
+    tr {
+        background: #ffffff;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+
+<form action="" method="post">
+    {% csrf_token %}
+    NGS QC Information <br>
+    Enter the Barcode here(eg. 111-1111-1111) <br>
+    <textarea cols="50" rows="13" id="many" style="resize:none;" name="input"></textarea><br>
+    <input type="submit" value="确定" name="submit"/>
+</form>
+输入数据:
+<pre>{{ rlt }}</pre>
+结果:
+{% if err %}
+<div>{{ err }}</div>
+{% else %}
+Reads QC:
+<div>
+    <table>
+        <tr>
+            {% for key in reads_qc_head %}
+            <th>
+                {{key}}
+            </th>
+            {% endfor %}
+        </tr>
+        {% for value in reads_qc_info %}
+        <tr>
+            {% for v in value %}
+            <td>
+                {{v}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+MatchInterval:
+<div>
+    <table>
+        <tr>
+            {% for key in interval_head %}
+            <th>
+                {{key}}
+            </th>
+            {% endfor %}
+        </tr>
+        {% for value in interval_info %}
+        <tr>
+            {% for v in value %}
+            <td>
+                {{v}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+UnMapped:
+<div>
+    <table>
+        <tr>
+            {% for key in unmap_head %}
+            <th>
+                {{key}}
+            </th>
+            {% endfor %}
+        </tr>
+        {% for value in unmap_info %}
+        <tr>
+            {% for v in value %}
+            <td>
+                {{v}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+</body>
+</html>

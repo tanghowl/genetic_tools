@@ -2,10 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>频率计算</title>
+    <title>beta值计算</title>
+    <style>
+    table {
+        border: 0px;
+        cellspacing: 1px;
+        cellpadding: 0px;
+        background: #888;
+    }
+    tr {
+        background: #ffffff;
+    }
 
+    th, td {
+        padding: 5px;
+    }
+    </style>
 </head>
 <body>
+
 <form action="" method="post">
     {% csrf_token %}
     在这里输入内容...(格式:rs编号 基因型 基因型频率 Beta值,以空格或制表符为分割符)<br>
@@ -15,7 +30,29 @@
 输入数据:
 <pre>{{ raw }}</pre>
 结果:
-<pre>{{ rlt }}</pre>
-
+{% if err %}
+<div>{{ err }}</div>
+{% else %}
+<div>
+    <table>
+        <tr>
+            {% for key in head %}
+            <th>
+                {{key}}
+            </th>
+            {% endfor %}
+        </tr>
+        {% for value in rlt %}
+        <tr>
+            {% for v in value %}
+            <td>
+                {{v}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{%endif%}
 </body>
 </html>

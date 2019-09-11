@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ComputBF import views
+from App import views
 #
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,5 +23,6 @@ urlpatterns = [
     path('genetic/compute-or/', views.compute_or),
     path('genetic/compute-beta/', views.compute_beta),
     path('genetic/query-gt/', views.qurey_exist),
+    path('genetic/query-ngs-qc/', views.qurey_ngs_qc_info)
     # path('text', views.test),
 ]
