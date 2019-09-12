@@ -36,7 +36,7 @@ class QueryNgsQc(object):
         project_name = infos.get('ProjectName')
         temp = [project_name, barcode, type_info]
         for head in info_head:
-            temp.append(infos.get('ReadsQC').get('TotalReads').get(type_info).get(head))
+            temp.append(round(infos.get('ReadsQC').get('TotalReads').get(type_info).get(head), 4))
         return temp
 
     def _get_reads_qc_head(self):
@@ -65,7 +65,8 @@ class QueryNgsQc(object):
             each_info.append(barcode)
             for head in info_head:
                 info = each.get('MatchInterval').get(head)
-                each_info.append(info)
+                value = round(float(info), 4)
+                each_info.append(value)
             match_interval_info.append(each_info)
         return heads, match_interval_info
 

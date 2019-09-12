@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b0d4052-8110-413c-be6c-4c5455ca735c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/query_ngs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/mongo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/genetic/log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ngs_qc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3b0d4052-8110-413c-be6c-4c5455ca735c" name="Default" comment="ngs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/compute_beta.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/compute_beta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/compute_or.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/compute_or.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/querysite.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/querysite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputBF/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configfile/v2.1_comparison_table" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/genetic/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/genetic/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genetic/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/genetic/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/compute_beta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compute_beta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/compute_or.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compute_or.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/query_ngs.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/query_ngs.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,15 +13,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/query_ngs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-645">
-              <caret line="18" column="64" lean-forward="true" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+            <state relative-caret-position="314">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <element signature="e#1090#1361#0" />
-                <element signature="e#1384#1554#0" />
               </folding>
             </state>
           </provider>
@@ -52,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/templates/ngs_qc.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
-              <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+              <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -60,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="1245">
               <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -124,15 +101,15 @@
         <option value="$PROJECT_DIR$/genetic/log.py" />
         <option value="$PROJECT_DIR$/ComputBF/compute_beta.py" />
         <option value="$PROJECT_DIR$/db/mongo.py" />
-        <option value="$PROJECT_DIR$/App/query_ngs.py" />
         <option value="$PROJECT_DIR$/genetic/urls.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/App/views.py" />
         <option value="$PROJECT_DIR$/templates/ngs_qc.html" />
+        <option value="$PROJECT_DIR$/App/query_ngs.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
@@ -374,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541350891137</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ngs">
+      <created>1568201323418</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568201323418</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -388,7 +372,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20789288" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -434,7 +417,8 @@
     <MESSAGE value="set home" />
     <MESSAGE value="rounds" />
     <MESSAGE value="add or" />
-    <option name="LAST_COMMIT_MESSAGE" value="add or" />
+    <MESSAGE value="ngs" />
+    <option name="LAST_COMMIT_MESSAGE" value="ngs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -498,13 +482,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configfile/config.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/configfile/config.conf" />
     <entry file="file://$PROJECT_DIR$/genetic/log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -610,14 +588,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/query_ngs.py">
+    <entry file="file://$PROJECT_DIR$/App/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-645">
-          <caret line="18" column="64" lean-forward="true" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+        <state relative-caret-position="1245">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#1090#1361#0" />
-            <element signature="e#1384#1554#0" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -625,19 +601,19 @@
     <entry file="file://$PROJECT_DIR$/templates/ngs_qc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
-          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/views.py">
+    <entry file="file://$PROJECT_DIR$/App/query_ngs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="314">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
